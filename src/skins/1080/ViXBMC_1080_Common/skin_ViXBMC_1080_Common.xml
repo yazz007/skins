@@ -19,8 +19,9 @@
 		<panel name="InfobarProgramNowStartTime" />
 		<panel name="InfobarEncryptedIcon" />
 		<panel name="InfobarProgramNowName" />
+		<panel name="InfobarProgramNowRemaining" />
 		<panel name="InfobarProgramNowProgressBar" />
-		<panel name="InfobarNextText" />
+		<!--<panel name="InfobarNextText" />-->
 		<panel name="InfobarProgramNextStartTime" />
 		<panel name="InfobarProgramNextName" />
 		<panel name="InfobarProgramNextDuration" />
@@ -28,11 +29,11 @@
 	</screen>
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="fill" backgroundColor="transparent">
 		<ePixmap pixmap="infobar/2ndinfobar.png" position="0,0" size="960,754" alphatest="blend" zPosition="1"/>
-		<eLabel text="PLAYING NOW" position="0,30" size="960,60" font="screentitle;50" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2"/>
-		<widget source="session.Event_Now" render="Label" position="0,80" size="960,55" font="infobar2;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2">
+		<eLabel text="TERAZ" position="30,30" size="930,60" font="screentitle;50" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="left" valign="top" zPosition="2"/>
+		<widget source="session.Event_Now" render="Label" position="0,80" size="960,55" font="DroidBoldfont;42" foregroundColor="orange" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="30,140" size="900,370" font="infobar2;34" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2">
+		<widget source="session.Event_Now" render="Label" position="30,140" size="900,370" font="infobar2;34" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="left" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<eLabel text="CAM" position="40,590" size="150,60" font="screentitle;56" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
@@ -52,11 +53,11 @@
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
 		<ePixmap pixmap="infobar/2ndinfobar.png" position="960,0" size="960,754" alphatest="blend" zPosition="1"/>
-		<eLabel text="PLAYING NEXT" position="960,30" size="960,60" font="screentitle;50" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2"/>
-		<widget source="session.Event_Next" render="Label" position="960,80" size="960,55" font="infobar2;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2">
+		<eLabel text="NASTĘPNE" position="990,30" size="930,60" font="screentitle;50" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="left" valign="top" zPosition="2"/>
+		<widget source="session.Event_Next" render="Label" position="960,80" size="960,55" font="DroidBoldfont;42" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="990,140" size="900,190" font="infobar2;34" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2">
+		<widget source="session.Event_Next" render="Label" position="990,140" size="900,190" font="infobar2;34" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="left" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<!-- <panel name="2IBWeather" /> -->
@@ -73,12 +74,13 @@
 		<panel name="InfobarProgramNowStartTime" />
 		<panel name="InfobarEncryptedIcon" />
 		<panel name="InfobarProgramNowName" />
+		<panel name="InfobarProgramNowRemaining" />
 		<panel name="InfobarProgramNowProgressBar" />
-		<panel name="InfobarNextText" />
+		<!--<panel name="InfobarNextText" />-->
 		<panel name="InfobarProgramNextStartTime" />
 		<panel name="InfobarProgramNextName" />
 		<panel name="InfobarProgramNextDuration" />
-		<widget source="session.CurrentService" render="Label" position="490,1005" size="660,50" font="infobar2;34" foregroundColor="grey" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Label" position="390,1005" size="660,50" font="infobar2;34" foregroundColor="grey" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2">
 			<convert type="PliExtraInfo">CryptoSpecial</convert>
 		</widget>
 		<panel name="InfobarStatusIcons" />
