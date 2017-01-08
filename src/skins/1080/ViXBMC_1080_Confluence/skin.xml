@@ -25,6 +25,7 @@
 		<font name="infobar2" filename="/usr/share/enigma2/ViXBMC_1080_Common/fonts/OpenSans-Regular.ttf" scale="100" />
 		<font name="buttons" filename="/usr/share/enigma2/ViXBMC_1080_Common/fonts/FreeSans.ttf" scale="100" />
 		<font name="Subtitlefont" filename="/usr/share/enigma2/ViXBMC_1080_Common/fonts/OpenSans-Regular.ttf" scale="100" />
+		<font name="DroidBoldfont" filename="/usr/share/fonts/DroidSans-Bold.ttf" scale="100" />
 		<alias name="Body" font="menulist" size="34" height="50" />
 		<alias name="TextNormal" font="menulist" size="34" height="50" />
 		<alias name="ChoiceList" font="menulist" size="34" height="50" />
