@@ -663,11 +663,16 @@
 	<screen name="GraphicalInfoBarEPG" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
 		<ePixmap pixmap="infobar/background2.png" position="0,695" size="1920,405" alphatest="blend" zPosition="1"/>
 		<ePixmap pixmap="infobar/infobarepg.png" position="0,680" size="1920,420" alphatest="blend" zPosition="2"/>
+		<!--
 		<widget source="global.CurrentTime" render="Label" position="1037,700" size="670,60" font="date;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="3">
 			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1735,700" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="3">
-			<convert type="ClockToText">Format:%H:%M</convert>
+		-->
+		<widget source="global.CurrentTime" render="Label" position="1735,700" size="130,60" font="clock;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="Event" render="Label" position="325,750" size="1120,60" font="infobar2;46" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" noWrap="1" zPosition="3" >
+			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=0,oneshot=1,startdelay=8000" position="30,750" size="900,60" font="screentitle;46" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="3" />
 		<ePixmap pixmap="buttons/key_info.png" position="1698,765" size="96,58" alphatest="blend" zPosition="3"/>

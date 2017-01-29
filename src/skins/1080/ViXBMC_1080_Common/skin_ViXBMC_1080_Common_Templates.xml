@@ -106,10 +106,10 @@
 	</screen>
 	<screen name="FullScreenTimeDate">
 		<widget source="global.CurrentTime" render="Label" position="1047,5" size="670,60" font="date;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
-			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
+			<convert type="ClockToText">ShortDate</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1755,5" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
-			<convert type="ClockToText">Format:%H:%M</convert>
+		<widget source="global.CurrentTime" render="Label" position="1755,5" size="130,60" font="clock;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
+			<convert type="ClockToText">Default</convert>
 		</widget>
 	</screen>
 	<screen name="FullscreenPIGPanel">
@@ -307,7 +307,7 @@
 			<convert type="ClockToText">Format:%A %d-%m-%Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1730,790" size="150,60" font="screentitle;56" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
-			<convert type="ClockToText">Format:%H:%M</convert>
+			<convert type="ClockToText">Default</convert>
 		</widget>
 	</screen>
 	<screen name="InfobarTunerStatus">
